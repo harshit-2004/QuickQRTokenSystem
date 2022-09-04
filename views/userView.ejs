@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script href="../jquery-3.6.0.js"></script>
+
+    <title>#<%=ID%> - Snackers </title>
+</head>
+
+<body>
+    <div class="pt-4 pb-4 flex justify-center h-20">
+        <img class="" src="/Images/logo.png" alt="Restaurant Logo">
+    </div>
+    <hr>
+
+    <div class="grid-rows-3 grid w-screen h-1/2">
+        <div class="bg-gray-200 rounded-full h-2.5">
+            <% if (order.order_completion) { %>
+                <div class="bg-[#141E61] h-2.5 rounded-full transition-all duration-500" style="width:100.00%"></div>
+            <% } else if (!order.order_completion){ %>
+                <div class="bg-[#141E61] h-2.5 rounded-full transition-all duration-500" style="width: 66.66%"></div>
+            <% } %> 
+        </div>
+
+            <div class="grid grid-cols-3 justify-center items-center w-screen">
+                <div class="grid justify-center">
+                    <img class="w-32 h-32" src="/Images/order-placed.jpeg" alt="placed">
+                </div>
+                <div class="grid justify-center">
+                    <img class="w-32 h-32" src="/Images/order-on-process.jpeg" alt="on process">
+                </div>
+                <div class="grid justify-center">
+                    <img class="w-36 h-36" src="/Images/order-prepared.jpeg" alt="delivered">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 justify-center py-2">
+                <div class="grid justify-center">
+                    <p class="text-2xl italic">Order Placed</p>
+                </div>
+                <div class="grid justify-center">
+                    <p class="text-2xl italic">Order under Processing</p>
+                </div>
+                <div class="grid justify-center">
+                    <p class="text-2xl italic">Order Prepared</p>
+                </div>
+            </div>
+    </div>
+
+    <div>
+        <% if (order.order_completion) { %>
+        <h1 id="ring" class="text-4xl text-center border-2 p-4 text-green-600 border-black">
+            <b>Your order is prepared! Please receive at the counter.</b>
+        <% } %></h1>
+    </div>
+
+     <div>
+        <h1 class="text-3xl p-4"><b>Order Details</b></h1>
+        <hr>
+        <div class="pl-4">
+        <p>Order ID : </p>
+        <p><b>#<%=order.order_ID%></b></p>
+        <p>Order Name :</p>
+        <p><b><%=order.order_Item%></b></p>
+        <p>Order Amount : </p>
+        <p><b><%=order.amount%></b></p>
+        </div>
+
+        <h1 class="text-center text-2xl p-5 font-mono">Thank you for your order!</h1>
+     </div>
+     <script>
+        var a = setInterval(function(){
+            if(document.getElementById('order_status').innerText === 'false'){
+                console.log(document.getElementById('order_status').innerText);
+                location.reload();
+            }
+        else{
+            clearInterval(a);
+        }
+        },1000)
+     </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script href="../jquery-3.6.0.js"></script>
+    <title>Order Tables Page</title>
+</head>
+
+<body>
+    <h1 class="text-4xl pt-4 pb-4 text-center bg-yellow-200"><b>Pending Orders Table</b></h1>
+    <hr>
+
+
+    <table class="table-auto w-full mt-4 border-2 border-black">
+        <tr class="bg-yellow-100">
+            <th>Order ID</th>
+            <th>Item Name</th>
+            <th>Amount</th>
+            <th>Status Button</th>
+            <th>QR Codes</th>
+        </tr>
+    <% for(let index of ordersn) { %>
+    <tr>
+        <th class="bg-[#C19A6B] hover:bg-inherit border-2 border-black"><%=index.order_ID%></th>
+        <hr>
+        <th class="bg-[#EADDCA] hover:bg-inherit border-2 border-black"><%=index.order_Item%></th>
+        <hr>
+        <th class="bg-[#C19A6B] hover:bg-inherit border-2 border-black"><%=index.amount%></th>
+        <hr>
+        <th class="bg-[#EADDCA] hover:bg-inherit border-2 border-black">
+        <a href="modify/<%=index.order_ID%>"><button id="Yes" class="border-2 border-black w-32 bg-slate-600 text-white rounded-lg" >Prepared</button></a>
+        </th>
+        <hr>
+        <th class="bg-[#C19A6B] hover:bg-inherit border-2 border-black">
+            <a href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=localhost:8000/orders/<%=index.order_ID%>">QR</a>
+        </th>
+        <hr>
+    </tr>
+    <% } %>
+</table>
+</body>
+</html>
