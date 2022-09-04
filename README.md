@@ -1,5 +1,5 @@
 
-# 🤳 Quick QR Scan System
+# 🤳 Quick QR Token System
 
 We are solving a small but big issue of our college, i.e, NIT Jalandhar. "Snackers"- the largest canteen of our college, calls for order after preparing. It feels very unpleasing inside canteen area. Canteen staff also face problems in shouting all day. The orders are not in queue, which disturbs synchronousity. Although, they have a token displaying system but they don't use it. Why? On further researching we found out that because the canteen operates in such a large scale, customers tends to ignore the token numbers displayed on screen. 
 
