@@ -7,30 +7,30 @@ We are solving this problem by attaching a unique QR code with each receipt. On 
 
 # Technical Stack
 
-1. MongoDB 👩‍💻
+1. MongoDB. 👩‍💻
 
-2. NodeJS 🎉
+2. NodeJS. 🎉
 
-3. Tailwind 💥
+3. Tailwind. 💥
 
-4. ExpressJS 🔥
+4. ExpressJS. 🔥
 
-5. jQuery 😎
+5. jQuery. 😎
 
-6. Javascript 🙌
+6. Javascript. 🙌
 
 
 # Team Details
 
-Hypertext Assassins - Team Number 65
+Hypertext Assassins - Team Number 65.
 
-1.Ankush Agarwal - DCH-8185
+1.Ankush Agarwal - DCH-8185.
 
-2.Aditya Garg - DCH-8186
+2.Aditya Garg - DCH-8186.
 
-3.Vilol Goyal - DCH-8183
+3.Vilol Goyal - DCH-8183.
 
-4.Harshit- "harshit.it.21@nitj.ac.in"
+4.Harshit- "harshit.it.21@nitj.ac.in".
 
 <img width="1440" alt="Screenshot 2022-09-04 at 12 15 34" src="https://user-images.githubusercontent.com/96365691/188302895-c62736c4-ac94-4abf-a17d-6ad68c0f7f37.png">
 <img width="1440" alt="Screenshot 2022-09-04 at 12 15 04" src="https://user-images.githubusercontent.com/96365691/188302902-6a294949-8b90-4595-80bd-95ea1d1482be.png">
